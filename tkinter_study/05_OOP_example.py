@@ -25,7 +25,7 @@
 #
 #     def create_body(self):
 #         self.input = StringVar()
-#         Entry(self.root,textvariable=self.input).pack()
+#         Entry(self.root,textvariable =self.input).pack()
 #
 #     def create_bottom(self):
 #         Button(self.root,text='click me!',command=self.click_it).pack(fill=X)
