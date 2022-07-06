@@ -1,7 +1,7 @@
 # coding=utf-8
 # @Time : 2022/7/6 15:28
 # @Author : zsjng
-# @File : tkinter_study.py
+# @File : 01_Example.py
 # @Software : PyCharm
 
 """
@@ -15,7 +15,6 @@ root = Tk()
 root.mainloop()
 """
 from tkinter import *
-from tkinter import ttk
 
 
 def call_back():
@@ -32,32 +31,18 @@ check_button = Checkbutton(root, text='select')  # select or not.
 
 entry = Entry(root)  # write string in it.
 
+radio_button = Radiobutton(root, text='male', value=1)
 
+radio_button2 = Radiobutton(root, text='female', value=2)  # choose only one.
 
-
-
-
-
-
-
-
-
-
-
-
+scale = Scale(root, orient='horizontal')  # orient must be horizontal or vertical.
 
 label.pack()  # every module that shown on Tk need .pack()
 button.pack()
 check_button.pack()
 entry.pack()
-
-
-
-
-
-
-
-
-
+radio_button.pack()
+radio_button2.pack()
+scale.pack()
 
 root.mainloop()  # write code before mainloop()
