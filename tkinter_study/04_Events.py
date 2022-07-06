@@ -42,3 +42,18 @@ from tkinter import *
 # frame.pack()
 # root.mainloop()
 '''keyboard events'''
+root = Tk()
+Label(root, text='This is keyboard events').pack()
+
+
+def my_func(event):
+    print('keysym = ', event.keysym)
+
+
+frame = Frame(root, bg='green', width=200, height=200)
+root.bind('<KeyPress>', lambda event: my_func(event))
+
+frame.pack()
+root.mainloop()
+''' use root.unbind('<KeyPress>') to unbind events'''
+
